@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends - KoKoa Clone</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>19:38</span>
+        </div>
+        <div class="status-bar__column">
+            <span>99%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">More</h1>
+        <div class="screen-header__icons">
+            <span><i class="fas fa-search fa-lg"></i></a></span>
+            <span><i class="fas fa-music fa-lg"></i></span>
+            <span><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a></span>
+            <span class="screen-header__point">0</span>
+        </div>
+    </header>
+
+    <main class="main-screen more-screen">
+        <div class="user-component profile">
+            <div class="user-component__column">
+                <img src="img/son.png"
+                  class="user-component__avatar user-component__avatar"/>
+                <div class="user-component__text">
+                    <h4 class="user-component__title">Son</h4>
+                    <h6 class="user-component__subtitle">
+                        +1 777 888 999
+                    </h6>
+                </div>
+            </div>
+            <div class="user-component__column">
+                <i class="far fa-edit fa-2x"></i>
+            </div>
+        </div>
+
+        <div class="icon-row">
+            <div class="icon-row__icon">
+                <i class="far fa-calendar-alt"></i>
+                <span>Calender</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="fas fa-futbol"></i>
+                <span>YourTeam</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="far fa-image"></i>
+                <span>Themes</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="fas fa-wallet"></i>
+                <span>Account</span>
+            </div>
+        </div>
+
+        <div class="more-suggestions">
+            <div class="more-suggestions__header">
+                <h4>Suggestions</h4>
+                <span>Contact with other league<i class="fas fa-chevron-right fa-xs"></i>
+                </span>
+            </div>
+        <div class="more-suggestion__icons">
+                <div class="more-suggestion__icon">
+                    <div class="more-suggestion__icon-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/ko/thumb/d/df/Bundesliga_logo_%282017%29.svg/800px-Bundesliga_logo_%282017%29.svg.png">
+                    </div>
+                    <span class="more-suggestion__icon-text">BUNDES</span>
+                </div>
+                <div class="more-suggestion__icon">
+                    <div class="more-suggestion__icon-image">
+                        <img src="https://w.namu.la/s/f76ba4e6ebbab718d9e56319b7e87b7039db9e93c38c4e774ee060bd67f231666610a4ca42d62f470a137842319fe01ab9d3dab541704c4ab6a0f3cc52530b65be395af4a58a9f3660302189639faf0a">
+                    </div>
+                    <span class="more-suggestion__icon-text">LALIGA</span>
+                </div>
+                <div class="more-suggestion__icon">
+                    <div class="more-suggestion__icon-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Ligue1.svg/324px-Ligue1.svg.png?20200221165942">
+                    </div>
+                    <span class="more-suggestion__icon-text">LIGUE1</span>
+                </div>
+                <div class="more-suggestion__icon">
+                    <div class="more-suggestion__icon-image">
+                        <img src="https://w.namu.la/s/6b5f65aeaf171d67b818eca42e0a6cd30c46af4db3288213dfec636562a38b0585ee4fbd95baca1a386727886802cb19072e9ed91a921a7333b8d9973850a2cd150c48b09bed18f45dc92d1aaec9fd05651b31fdb7c3a75948c59e4f1bfb5e67">
+                    </div>
+                    <span class="more-suggestion__icon-text">SERIE A</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <i class="far fa-user fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__notification badge">2</span>
+                    <i class="far fa-comment fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html">
+                    <i class="fas fa-search fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <span class="nav__point">0</span>
+                    <i class="fas fa-ellipsis-h fa-2x"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="no-mobile">
+        <span>Your screen is too big :(</span>
+    </div>
+
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
+</html>

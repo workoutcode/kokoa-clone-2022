@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+@import "reset.css";
+@import "variables.css";
+
+/*Components*/
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
+@import "components/chat-screen.css";
+@import "components/no-mobile.css";
+
+/*screens*/
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+
+body{
+    color: #2e363e;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 26px;
+    height: 110vh;
+}
+
+.main-screen{
+    padding: 0px var(--horizontal-space);
+}
+#chat-screen{
+    height: 95vh;
+}
+.main-screen i,
+.main-screen img{
+    cursor: pointer;
+}

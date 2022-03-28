@@ -1,0 +1,134 @@
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.main-chat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation:  fadeIn 0.4s linear;
+}
+.chat__timestamp{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: white;
+    background-color:rgba(146, 164, 178, 0.6);
+    padding: 13px 15px;
+    font-size: 14px;
+    border-radius: 25px;
+}
+.message-row{
+    width: 100%;
+    display: flex;
+    margin-bottom: 22px;
+}
+.message-row img{
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    margin-right: 10px;
+}
+.message__author{
+    opacity: 0.8;
+    font-size: 13px;
+    margin-bottom: 8px;
+    display: block;
+}
+.message__bubble{
+    background-color: rgb(200, 253, 253);
+    padding: 8px 13px;
+    border-radius: 0px 15px 15px 15px;
+    margin-right: 3px;
+}
+.message__info{
+    display: flex;
+    align-items: flex-end;
+}
+.message__time{
+    opacity: 0.8;
+    font-size: 12px;
+}
+.message-row__own{
+    width: 100%;
+    display: flex;
+    margin-bottom: 22px;
+    flex-direction: row-reverse;
+}
+.message-row__own .message__bubble{
+    background-color: #F7DE02;
+    padding: 8px 13px;
+    border-radius: 15px 0px 15px 15px;
+    margin-right: 3px;
+}
+.reply {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 30px 5px 20px;
+    align-items: center;
+    box-sizing: border-box;
+}
+.reply .reply__column:first-child{
+    width: 8%;
+}
+.reply .reply__column:last-child{
+    width: 92%;
+    position: relative;
+}
+.reply i {
+    opacity: 0.5;
+}
+.reply input{
+    padding: 12px 0px 12px 12px;
+    width: 100%;
+    border: var(--main-border);
+    border-radius: 20px;
+    transition: all .3s ease-in-out;
+}
+.reply__column:last-child > i,
+.reply__column:last-child button{
+    position: absolute;
+    right: -10px;
+    top: 6px;
+}
+.reply__column:last-child > i{
+    right: 40px;
+    top: 13px;
+}
+.reply__column button{
+    background-color: var(--blue);
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+}
+.reply__column button i{
+    opacity: 1;
+}
+
+.reply__column button:focus,
+.reply__column button:active{
+    outline: none;
+}
+.reply i,
+.reply button{
+    transition: all 0.3s ease-in-out;
+}
+
+.reply:focus-within i,
+.reply:focus-within button{
+    opacity: 0;
+}
+.reply:focus-within input{
+    width:90vw;
+    transform: translateX(-8%);
+}

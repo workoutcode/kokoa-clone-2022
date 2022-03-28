@@ -1,0 +1,24 @@
+.badge{
+    background-color: tomato;
+    color: white;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.screen-header__point{
+    background-color: tomato;
+    color: tomato;
+    font-size: 0px;
+    width: 5.5px;
+    height: 5.5px;
+    border-radius: 50%;
+    position: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -5px;
+    bottom: 19px;
+}
